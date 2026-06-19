@@ -1,7 +1,3 @@
-Here is a complete, dedicated `README.md` tailored specifically for your **Student ID Card Generator** project. It includes your exact tech stack, a clear structure, and the step-by-step terminal commands you used to get it running.
-
----
-
 # 🪪 Automated Student ID Card Generating System
 
 A practical web platform that automates institutional asset generation. Students can fill out a dynamic web form with their profile details and portrait images, and the system instantly maps the data onto a template to produce a crisp, download-ready student identification card.
@@ -109,15 +105,3 @@ Once executed successfully, open your web browser and navigate to:
 * **Django Admin Backend:** `[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)`
 
 ---
-
-## 📂 Repository Structure Guardrails
-
-To prevent bloating the public repository footprint, a `.gitignore` file is active in this workspace to explicitly skip tracking local environment fragments and user testing states:
-
-```text
-venv/
-*.sqlite3
-tmp/
-__pycache__/
-
-```
