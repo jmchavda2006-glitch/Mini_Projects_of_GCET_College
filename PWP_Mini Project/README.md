@@ -40,35 +40,28 @@ venv\Scripts\activate
 
 ```
 
-
-
-```
 * **Windows (PowerShell):**
-  ```powershell
+
+```powershell
   .\venv\Scripts\activate
 
 ```
 
+
 * **Mac / Linux:**
 ```bash
-
-```
-
-
-
 source venv/bin/activate
 
 ```
-*(Once activated, you will see `(venv)` appear at the very beginning of your terminal command line).*
 
-### 3. Install Dependencies
-If you are setting this up fresh or ensuring packages are updated, install the required libraries:
-```bash
-pip install -r requirements.txt
 
-```
 
-*(Note: If you don't have a requirements file yet, you can generate it using `pip freeze > requirements.txt` while your environment is active).*
+
+
+
+(Once activated, you will see `(venv)` appear at the very beginning of your terminal command line).
+
+
 
 ### 4. Apply Database Migrations
 
@@ -105,3 +98,16 @@ Once executed successfully, open your web browser and navigate to:
 * **Django Admin Backend:** `[http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)`
 
 ---
+
+---
+
+## 🎯 Connect & Collaborate
+
+* **LinkedIn:** [Jigar Chavda](linkedin.com/in/jigar-chavda-6b8322281)
+
+---
+
+### 👨‍💻 Maintained By
+**Jigar Chavda** 
+*Undergraduate Student, Computer Science and Design (2023–2027) under Department of Computer Engineering* <br>
+**G H Patel College of Engineering and Technology (GCET)** 
