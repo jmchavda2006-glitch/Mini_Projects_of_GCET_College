@@ -34,7 +34,7 @@ gcc main.c -o Student Management System
 
 ```
 
-### 2. Execution
+### 3. Execution
 
 Run the compiled execution program: <br> Windows: 
 
