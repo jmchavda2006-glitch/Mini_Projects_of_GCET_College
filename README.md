@@ -18,9 +18,9 @@ It acts as a map of my growth as an engineer—spanning fundamental data structu
 | --- | --- | --- | --- | --- |
 | **2024-25** | **Sem 3** | Data Structures ( DS ) | **Student Management System** | C, Singly Linked Lists |
 | **2024-25** | **Sem 4** | Java Programming ( Java ) | **Automated Billing System** | Java, File I/O, Collections |
-| **2024-25** | **Sem 4** | Computer Graphics & Design ( DAA ) | **2D Retro Space Shooter** | C, OpenGL, GLUT API |
+| **2024-25** | **Sem 4** | Computer Graphics & Design ( CGD ) | **2D Retro Space Shooter** | C, OpenGL, GLUT API |
 | **2025-26** | **Sem 5** | Python & Web Programming ( PWP ) | **Student ID Card Generator** | Python, HTML5, CSS3, Pillow |
-| **2025-26** | **Sem 6** | Design & Analysis of Algorithms (DAA) | **Optimal Library Arrangement** | C, Dynamic Programming (OBST) |
+| **2025-26** | **Sem 6** | Design & Analysis of Algorithms ( DAA ) | **Optimal Library Arrangement** | C, Dynamic Programming (OBST) |
 
 ---
 
