@@ -1,0 +1,4 @@
+gcc space_game.c -o space_game.exe -lfreeglut -lglu32 -lopengl32
+
+space_game.exe
+

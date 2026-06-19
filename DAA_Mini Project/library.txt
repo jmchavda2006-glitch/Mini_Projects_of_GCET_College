@@ -1,0 +1,15 @@
+102,Operating System Concepts,Computer Science,21
+113,Machine Learning,AI,22
+104,Computer Networks,Computer Science,18
+109,Compiler Design,Computer Science,8
+106,Digital Logic Design,Electronics,7
+108,Data Communications and Networking,Networking,16
+105,Artificial Intelligence A Modern Approach,AI,25
+101,Design and Analysis of Algorithms,Computer Science,15
+115,Cloud Computing Concepts,Cloud,13
+111,Discrete Mathematics and Its Applications,Mathematics,14
+103,Database System Concepts,Computer Science,12
+110,Probability and Statistics,Mathematics,6
+112,Software Engineering,Computer Science,11
+107,Microprocessor Architecture,Electronics,10
+114,Cyber Security Fundamentals,Security,9
