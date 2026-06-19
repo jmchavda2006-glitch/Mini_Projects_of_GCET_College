@@ -23,19 +23,6 @@ Since this project runs directly as a standalone C application, no heavy install
 Ensure you have a standard C compiler installed (such as GCC, Clang, or MinGW for Windows).
 
 ### 2. Compilation
-Open your terminal inside this project directory and compile the program:
-
-```cmd
-gcc main.c -o Optimal_Library_Book_Arrangement_System
-```
-## 🚀 How to Run Locally
-
-Since this project runs directly as a standalone C application, no heavy installation steps are required. 
-
-### 1. Prerequisite
-Ensure you have a standard C compiler installed (such as GCC, Clang, or MinGW for Windows).
-
-### 2. Compilation
 
 Open your terminal inside this project directory and compile the program:
 
@@ -45,7 +32,7 @@ gcc main.c -o Optimal_Library_Book_Arrangement_System
 
 ```
 
-### 2. Execution
+### 3. Execution
 
 Run the compiled execution program: <br> Windows: 
 
