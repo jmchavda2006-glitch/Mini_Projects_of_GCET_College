@@ -61,4 +61,14 @@ Mac / Linux:
 ./Optimal_Library_Book_Arrangement_System
 
 ```
+## 🎯 Connect & Collaborate
+
+* **LinkedIn:** [Jigar Chavda](linkedin.com/in/jigar-chavda-6b8322281)
+
+---
+
+### 👨‍💻 Maintained By
+**Jigar Chavda** 
+*Undergraduate Student, Computer Science and Design (2023–2027) under Department of Computer Engineering* <br>
+**G H Patel College of Engineering and Technology (GCET)** 
 
