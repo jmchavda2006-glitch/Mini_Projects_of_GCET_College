@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Create ID Card</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1E90FF;
+    font-size: 28px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  input, select {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+
+  input:focus, select:focus {
+    border-color: #1E90FF;
+    outline: none;
+  }
+
+  .errorlist {
+    color: red;
+    margin: -10px 0 10px 0;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px;
+    background-color: #1E90FF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0d6efd;
+  }
+
+  .back-btn {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .back-btn a {
+    text-decoration: none;
+    color: #1E90FF;
+    font-weight: bold;
+  }
+
+  .alert {
+    background-color: #ffe4e1;
+    border: 1px solid #ff7b7b;
+    color: #b30000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Create ID Card</h2>
+
+  {% if form.errors %}
+    <div class="alert">
+      <strong>⚠ Please correct the following errors:</strong>
+      <ul>
+        {% for field, errors in form.errors.items %}
+          <li><b>{{ field|title }}</b>: {{ errors|join:", " }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <form method="post" enctype="multipart/form-data" action="{% url 'student_form' %}" target="_blank">
+    {% csrf_token %}
+    
+    {% for field in form %}
+      {% if field.name != "valid_through" %}
+        <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {{ field }}
+        {% if field.errors %}
+          <div class="errorlist">{{ field.errors }}</div>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    
+    <button type="submit">Generate ID Card</button>
+  </form>
+
+  <div class="back-btn">
+    <a href="{% url 'home' %}">← Back to Home</a>
+  </div>
+</div>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+  const enrolInput = document.querySelector("input[name='enrolment_no']");
+  const val = enrolInput.value.trim();
+
+  if (!/^\d{14}$/.test(val)) {
+    alert("Enrollment number must contain exactly 14 digits only (no letters or symbols).");
+    e.preventDefault(); // stop form submission
+  }
+});
+</script>
+
+</body>
+</html>

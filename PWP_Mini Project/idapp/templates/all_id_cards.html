@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All ID Cards</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  color: #002366;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background: #e0e0e0;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.button {
+  text-decoration: none;
+  padding: 6px 12px;
+  background: #1E90FF;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+a.button:hover {
+  background: #104E8B;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>All Generated ID Cards</h2>
+  <ul>
+    {% for student in students %}
+      <li>
+        {{ student.name }}
+        <span>
+          <a class="button" href="{% url 'student_id' student.id %}">View ID Card</a>
+          <a class="button" href="{% url 'download_pdf' student.id %}">Download PDF</a>
+        </span>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opening PDF...</title>
+    <script>
+        window.onload = function() {
+            // Open PDF in new tab
+            window.open("{% url 'download_id_card_pdf' student_id %}", "_blank");
+            // Redirect back to home or form page after opening PDF
+            window.location.href = "{% url 'student_form' %}";
+        }
+    </script>
+</head>
+<body>
+    <p>Opening your ID Card in PDF...</p>
+</body>
+</html>
