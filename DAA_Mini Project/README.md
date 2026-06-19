@@ -1,20 +1,33 @@
-# 🎓 Student Management System
+# 📚 Optimal Library Book Arrangement System
 
-A foundational Data Structures project implementing a robust student record organizer using dynamic memory allocation and linear data structures. This application handles basic student database workflows entirely within volatile memory using pointer chains.
+An intelligent library data manager developed to optimize manual book tracking and search efficiencies. This system maps real-world frequencies to evaluate performance tradeoffs between standard **Greedy Heuristics** and complex **Dynamic Programming (DP)** solutions.
 
 ## 🛠️ Tech Stack & Core Concepts
 * **Language:** C (C99 Standard)
-* **Data Structure:** Singly Linked List
-* **Memory Management:** Dynamic Memory Allocation (`malloc`, `free`)
+* **Algorithms:** Bottom-up Dynamic Programming, Greedy Approach, Tree Traversals (In-order), Array Sorting Heuristics
+* **Database Layer:** Persistent flat-file logging (`library.txt`)
 
 ## 💡 Core Features
-* **Dynamic Node Allocation:** Seamlessly adds student profiles (Roll No, Name, Marks) into an active runtime Linked List without arbitrary array limits.
-* **Linear Search & Update:** Traverses structured memory addresses via pointers to update marks or search for specific entities.
-* **Pointer Manipulation:** Safely handles head and middle pointer unlinking during record deletions.
-* **Memory Leak Prevention:** Includes an explicit structural cleanup routine (`freeAllStudents`) to safely release heap fragments back to the OS before graceful application shutdown.
+* **Optimal Arrangement (DP):** Implements the **Optimal Binary Search Tree (OBST)** concept. It evaluates frequency-weighted node distributions to construct an optimal topological layout that mathematically minimizes the average search cost.
+* **Greedy Arrangement:** Applies a classic greedy layout paradigm by sorting active entries strictly based on search counts in descending order ($O(N \log N)$ complexity metrics).
+* **Faux Access Transactions:** Simulates check-outs and structural updates, dynamically updating raw access counts on a persistent configuration log (`library.txt`).
+* **Persistent Cache Streams:** Integrates native file I/O operations to save and parse library structures across active system runtimes.
 
 ---
 
+## 🚀 How to Run Locally
+
+Since this project runs directly as a standalone C application, no heavy installation steps are required. 
+
+### 1. Prerequisite
+Ensure you have a standard C compiler installed (such as GCC, Clang, or MinGW for Windows).
+
+### 2. Compilation
+Open your terminal inside this project directory and compile the program:
+
+```cmd
+gcc main.c -o Optimal_Library_Book_Arrangement_System
+```
 ## 🚀 How to Run Locally
 
 Since this project runs directly as a standalone C application, no heavy installation steps are required. 
